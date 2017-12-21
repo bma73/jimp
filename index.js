@@ -1062,6 +1062,8 @@ Jimp.prototype.autocrop = function() {
         }
     }
 
+
+
     /**
      * All borders must be of the same color as the top left pixel, to be cropped.
      * It should be possible to crop borders each with a different color,
@@ -1178,7 +1180,7 @@ Jimp.prototype.autocrop = function() {
         width: widthOfPixelsToCrop,
         height: heightOfPixelsToCrop
     });
-    else return this;
+    return this;
 };
 
 /**
