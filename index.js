@@ -1239,7 +1239,7 @@ Jimp.prototype.blit = function(src, x, y, srcx, srcy, srcw, srch, cb) {
         }
     });
 
-    if (isNodePattern(cb)) return cb.call(this, null, this);
+    if (isNodePattern(cb)) cb.call(this, null, this);
     else return this;
 };
 
