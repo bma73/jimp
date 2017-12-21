@@ -1174,12 +1174,13 @@ Jimp.prototype.autocrop = function() {
         );
     }
 
-    if (isNodePattern(cb)) return cb.call(this, null, {
+    if (isNodePattern(cb)) cb.call(this, null, {
         x: eastPixelsToCrop,
         y: northPixelsToCrop,
         width: widthOfPixelsToCrop,
         height: heightOfPixelsToCrop
     });
+
     return this;
 };
 
